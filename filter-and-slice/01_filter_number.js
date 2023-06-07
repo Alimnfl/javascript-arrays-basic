@@ -31,3 +31,10 @@ const num = [9, 10, 11, 13, 15, 17, 18];
 
 const hasNext = num.filter((v, _, a) => a.includes(v + 1));
 console.log(hasNext);
+
+// Filter a number that have the next number + 2
+// 11 + 2 = 13 true, 15 + 2 = 17 false (the array doesn't have number 12)
+const num2 = [11, 13, 15, 19, 20, 21];
+
+const hasNext2 = num2.filter((v, _, a) => a.includes(v + 2));
+console.log(hasNext2);
